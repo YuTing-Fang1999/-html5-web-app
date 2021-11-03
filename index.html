@@ -1,10 +1,164 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta charset="utf-8">
-    <title>你好，GitHub</title>
-  </head>
-  <body>
-    <h1>覺得厲害</h1>
-  </body>
+    <title>台灣政治交流平台</title>
+
+    <style>
+        body {
+            background-color: #e8f5e9;
+            position: relative;
+        }
+        
+        .platform_btn {
+            position: absolute;
+            margin: 0 auto;
+            left: 50%;
+            bottom: -25px;
+            transform: translate(-50%, 0%);
+            letter-spacing: 2px;
+            font-size: 30px;
+            width: 100%;
+        }
+        
+        .right_bnt {
+            letter-spacing: 2px;
+            font-size: 18px;
+        }
+        
+        .content {
+            font-size: 20px;
+            padding-left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper  green darken-1 ">
+            <a href="#" class="brand-logo">首頁</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <!-- <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">JavaScript</a></li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col s12 m8 offset-m2">
+            <div class="card">
+                <div class="card-image">
+                    <div style="height: 200px;">
+                        此空間放LOGO或公告等等 我還沒想好<br> 作業傳遞參數的功能在參政權的四個按鈕
+                        <a class="disabled green waves-effect waves-light btn-large platform_btn">進入論壇</a>
+
+                    </div>
+
+                </div>
+                <div class="card-content">
+                    <blockquote>
+                        <h5>什麼是參政權?</h5>
+                    </blockquote>
+                    <div class="content">
+                        <p>
+                            簡單地說就是作為國家的國民，能夠參與國家事務決策、代表自己政治意見、選出符合自己想法的代表的權利。
+                            <br> <br> 常見的參政權有
+                            <a href="right_introduce.html?type=0" class=" green lighten-2 right_bnt waves-effect waves-light btn-small">選舉</a>
+                            <a href="right_introduce.html?type=1" class=" green lighten-2 right_bnt waves-effect waves-light btn-small">罷免</a>
+                            <a href="right_introduce.html?type=2" class=" green lighten-2 right_bnt waves-effect waves-light btn-small">創制</a>
+                            <a href="right_introduce.html?type=3" class=" green lighten-2 right_bnt waves-effect waves-light btn-small">複決</a>
+                        </p>
+
+                    </div>
+
+                    <blockquote>
+                        <h5>可行使參政權的年齡</h5>
+                    </blockquote>
+                    <div class="content">
+                        <table class="striped">
+                            <thead>
+                                <tr>
+                                    <th>權利類型</th>
+                                    <th>法規依據</th>
+                                    <th>年齡</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>選舉權</td>
+                                    <td>憲法第130條</td>
+                                    <td>年滿20歲</td>
+                                </tr>
+                                <tr>
+                                    <td>被選舉權</td>
+                                    <td>憲法第130條</td>
+                                    <td>最低23歲</td>
+                                </tr>
+                                <tr>
+                                    <td>罷免權</td>
+                                    <td>
+                                        公職人員選舉罷免法第3條第3項<br> 總統副總統選舉罷免法第76條
+                                    </td>
+                                    <td>年滿20歲</td>
+                                </tr>
+                                <tr>
+                                    <td>創制、複決權</td>
+                                    <td>公民投票法第7條</td>
+                                    <td>年滿18歲</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>參考資料: <br>https://www.legis-pedia.com/article/government-fundamental-rights/875#footnote-marker-1-1
+                        </p>
+                    </div>
+                    <blockquote>
+                        <h5>論壇宗旨</h5>
+                        有點亂，等我整理好再放<br> https://hackmd.io/iYJEAwEnRve7qJE4v5k0Fw
+                    </blockquote>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer  green darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
 </html>
