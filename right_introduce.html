@@ -23,6 +23,27 @@
             font-size: 20px;
             padding-left: 0px;
         }
+
+       /* searchBox */
+      .searchBox {
+        width: fit-content;
+        position: absolute;
+        bottom: 1px;
+        right: 5px;
+      }
+      #search_text {
+        width: 200px;
+        height: 25px;
+        background-color: white;
+      }
+      .btn_search {
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
+      }
     </style>
     <script type="text/javascript">
         // 取得網址裡的參數
@@ -40,16 +61,51 @@
 </head>
 
 <body>
+  <div class="navbar green">
     <nav>
-        <div class="nav-wrapper  green darken-1 ">
-            <a href="index.html" class="brand-logo">首頁</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <!-- <li><a href="sass.html">Sass</a></li>
-              <li><a href="badges.html">Components</a></li>
-              <li><a href="collapsible.html">JavaScript</a></li> -->
-            </ul>
-        </div>
+      <div class="nav-wrapper green">
+        <ul class="left">
+          <li>
+            <a>
+              <i class="hamburger material-icons hide-on-med-and-up sidenav-trigger" data-target="slide-out" style="margin:0px">menu</i>
+            </a>
+          </li>
+        </ul>
+        <a
+          href="/"
+          class="hide-on-small-only"
+          style="font-size: 24px; margin-left: 10px;"
+          >首頁</a
+        >
+        <a
+          href="/tw_policy_platform.html"
+          class="hide-on-small-only"
+          style="font-size: 24px; margin-left: 10px;"
+          >論壇</a
+        >
+        <ul class="right">
+          <div class="searchBox">
+            <form class="_searchForm" action="#" method="get">
+              <input
+                type="text"
+                id="search_text"
+                name="query"
+                class="search_txt"
+              />
+              <button class="btn_search tooltipped" data-position="left" data-tooltip="搜尋文章"/>
+                <i class="material-icons" style="color: white;">search</i>
+            </button>
+            </form>
+          </div>
+        </ul>
+      </div>
     </nav>
+    <ul id="slide-out" class="sidenav" style="width: 200px;">
+      <li><a class="waves-effect" href="\">首頁</a></li>
+        <li><a class="waves-effect" href="\tw_policy_platform.html">論壇</a></li>
+    </ul>
+  </div>
+  
     <div class="row">
         <div class="col s12 m8 offset-m2">
             <div class="card">
@@ -84,6 +140,15 @@
                   <img src="${img_src[X]}" width=100% />
                   <p>${content[X]}</p>
                 `;
+
+                document.addEventListener('DOMContentLoaded', function() {
+                  var elems = document.querySelectorAll('.sidenav');
+                  var instances = M.Sidenav.init(elems, {});
+                });
+                document.addEventListener('DOMContentLoaded', function() {
+                  var elems = document.querySelectorAll('.tooltipped');
+                  var instances = M.Tooltip.init(elems, {"exitDelay": 50,"enterDelay":0});
+                });
             </script>
             <script type="text/javascript" src="js/materialize.min.js">
             </script>
