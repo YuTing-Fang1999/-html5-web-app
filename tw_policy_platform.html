@@ -243,8 +243,6 @@
                     `
                 }
                 document.getElementById("article-list").innerHTML = str;
-                var elems = document.querySelectorAll('.sidenav');
-                var instances = M.Sidenav.init(elems, {});
           }
           
           function processResCount(response) {
@@ -269,15 +267,18 @@
                     `
                 }
                 document.getElementById("article-list").innerHTML = str;
-                
-                var elems = document.querySelectorAll('.tooltipped');
-                var instances = M.Tooltip.init(elems, {"exitDelay": 50,"enterDelay":0});
           }
           
           document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.sidenav');
             var instances = M.Sidenav.init(elems, {});
           });
+	    
+	  function A(){
+            var elems = document.querySelectorAll('.tooltipped');
+            var instances = M.Tooltip.init(elems, {"exitDelay": 50,"enterDelay":0});
+          }
+          setTimeout('A()', 1000); //延遲1秒
     </script>
 </body>
 
