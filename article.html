@@ -235,7 +235,7 @@
             function post(){
                 var Input = document.getElementById("myInput");
                 if(Input.value){
-                    //alert(Input.value);
+                    alert(Input.value);
                     var formId = "1FAIpQLSeDzogbe-c2iK6Au-mh3Xn_da90MOP9krIu5XmsBKKqsSojOw"
                     var MySubmit = `https://docs.google.com/forms/u/0/d/e/${formId}/formResponse?entry.1460729223=${Input.value}&submit=Submit`;
                     // var NewOpen = window.open(MySubmit);
@@ -246,7 +246,6 @@
                         dataType:'text',
                         success: function(msg){
                             //$('#result').text("儲存成功！");       
-				location.reload();
                         },
                         error:function(xhr, ajaxOptions, thrownError){ 
                         }                
