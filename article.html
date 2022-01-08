@@ -104,13 +104,14 @@
             });
         }
 
+        comments = [];
+
         function post() {
             var Input = document.getElementById("myInput");
             if (Input.value) {
-                alert(Input.value);
+                // alert(Input.value);
                 var formId = "1FAIpQLSeDzogbe-c2iK6Au-mh3Xn_da90MOP9krIu5XmsBKKqsSojOw"
                 var MySubmit = `https://docs.google.com/forms/u/0/d/e/${formId}/formResponse?entry.1460729223=${Input.value}&submit=Submit`;
-                // var NewOpen = window.open(MySubmit);
                 $.ajax({
                     url: MySubmit,
                     data: {},
@@ -121,6 +122,8 @@
                     },
                     error: function(xhr, ajaxOptions, thrownError) {}
                 });
+                comments.push(Input.value);
+                displayComments();
             } else {
                 alert("請輸入留言內容");
             }
@@ -138,20 +141,22 @@
             var data = response.getDataTable();
             var columns = data.getNumberOfColumns();
             var rows = data.getNumberOfRows();
-
-            var str = "";
-            var comment = []
             for (var r = 0; r < rows; r++) {
-                comment[r] = data.getFormattedValue(r, 1);
+                comments[r] = data.getFormattedValue(r, 1);
             }
             // alert(comment);
+            displayComments();
+
+        }
+
+        function displayComments() {
             str = ""
-            for (let i = 0; i < comment.length; ++i) {
+            for (let i = 0; i < comments.length; ++i) {
                 str +=
                     `
                         <div class="card">
                         <div class="card-content">
-                            ${comment[i]}
+                            ${comments[i]}
                         </div>
                     </div>
                     `
@@ -168,7 +173,6 @@
                     `
             document.getElementById("comments").innerHTML = str;
         }
-
         //VOTE
         var voteLen = 5;
         setup(voteLen);
