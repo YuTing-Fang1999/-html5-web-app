@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/mystyle.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta charset="utf-8">
+    <title>台灣政治交流平台</title>
+
+    <script type="text/javascript">
+        // 取得網址裡的參數
+        function GetUrlVar(VarName) {
+            name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+            var regexS = "[\\?&]" + VarName + "=([^&#]*)";
+            var regex = new RegExp(regexS);
+            var results = regex.exec(window.location.href);
+            if (results == null)
+                return "";
+            else
+                return results[1];
+        }
+    </script>
+</head>
+
+<body>
+    <div class="navbar green" id='navbar'>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m8 offset-m2">
+            <h4>與政論人文有關的文章列表</h4>
+            <div id='pixnet'>
+            </div>
+        </div>
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/genElement.js"></script>
+    <script>
+        genPixnetArticle('pixnet');
+        genNavBar('navbar');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/mystyle.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta charset="utf-8">
+    <title>台灣政治交流平台</title>
+
+    <script type="text/javascript">
+        // 取得網址裡的參數
+        function GetUrlVar(VarName) {
+            name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+            var regexS = "[\\?&]" + VarName + "=([^&#]*)";
+            var regex = new RegExp(regexS);
+            var results = regex.exec(window.location.href);
+            if (results == null)
+                return "";
+            else
+                return results[1];
+        }
+    </script>
+</head>
+
+<body>
+    <div class="navbar green" id='navbar'>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m8 offset-m2">
+            <div class="card">
+                <div class="card-content">
+                    <h5 id='title'>聯絡我們</h5>
+                    <div class="content" id='content'>
+                        <p style="font-weight: 550;">國立中興大學</p>
+                        <iframe width='100%' src="https://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=24.12376250893132, 120.67529381095461&z=15&t=p&output=embed" title="W3Schools Free Online Web Tutorials">
+                     </iframe>
+
+                        <br>
+                        <br>
+                        <div style="display: flex;">
+                            <img src="github.png" style="width: 25%; height: 25%;" />
+                            <div style="border-radius: 30px; border: #C4D7A4 5px solid; background-color: #e3e6b9; width: 100%;margin: 20px;">
+                                <div style="margin: 30px; color: #375D3B;">
+                                    <p>HTML5 WEB APP程式設計期末專題</p>
+                                    <p>4107056005 資工四 方郁婷</p>
+                                    <a href="https://github.com/YuTing-Fang1999/html5-web-app" target="_blank">github</a>
+                                    <br>
+                                    <a href="https://drive.google.com/drive/folders/13S0L4BFTFrxXE35S0YZyTZP9YQvfrMTO?usp=sharing" target="_blank">google試算表</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/genElement.js"></script>
+    <script>
+        genNavBar('navbar');
+    </script>
+</body>
+
+</html>

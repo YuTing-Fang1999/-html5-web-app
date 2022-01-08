@@ -1,255 +1,131 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <!--Import Google Icon Font-->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!--Import materialize.css-->
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="css/materialize.min.css"
-      media="screen,projection"
-    />
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/mystyle.css" media="screen,projection" />
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta charset="utf-8" />
     <title>台灣政治交流平台</title>
+</head>
 
-    <style>
-      body {
-        background-color: #e8f5e9;
-        position: relative;
-      }
-
-      .platform_btn {
-        position: absolute;
-        margin: 0 auto;
-        left: 50%;
-        bottom: -25px;
-        transform: translate(-50%, 0%);
-        letter-spacing: 2px;
-        font-size: 30px;
-        width: 100%;
-      }
-
-      .right_bnt {
-        letter-spacing: 2px;
-        font-size: 18px;
-      }
-
-      .content {
-        font-size: 16px;
-        padding-left: 40px;
-      }
-
-      /* searchBox */
-      .searchBox {
-        width: fit-content;
-        position: absolute;
-        bottom: 1px;
-        right: 5px;
-      }
-      #search_text {
-        width: 200px;
-        height: 25px;
-        background-color: white;
-      }
-      .btn_search {
-        background-color: transparent;
-        background-repeat: no-repeat;
-        border: none;
-        cursor: pointer;
-        overflow: hidden;
-        outline: none;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="navbar green">
-      <nav>
-        <div class="nav-wrapper green">
-          <ul class="left">
-            <li>
-              <a>
-                <i class="hamburger material-icons hide-on-med-and-up sidenav-trigger" data-target="slide-out" style="margin:0px">menu</i>
-              </a>
-            </li>
-          </ul>
-          <a
-            href="/html5-web-app"
-            class="hide-on-small-only"
-            style="font-size: 24px; margin-left: 10px;"
-            >首頁</a
-          >
-          <a
-            href="tw_policy_platform.html"
-            class="hide-on-small-only"
-            style="font-size: 24px; margin-left: 10px;"
-            >論壇</a
-          >
-          <ul class="right">
-            <div class="searchBox">
-              <form class="_searchForm" action="#" method="get">
-                <input
-                  type="text"
-                  id="search_text"
-                  name="query"
-                  class="search_txt"
-                />
-                <button class="btn_search tooltipped" data-position="left" data-tooltip="搜尋文章"/>
-                  <i class="material-icons" style="color: white;">search</i>
-              </button>
-              </form>
-            </div>
-          </ul>
-        </div>
-      </nav>
-      <ul id="slide-out" class="sidenav" style="width: 200px;">
-        <li><a class="waves-effect" href="/html5-web-app">首頁</a></li>
-        <li><a class="waves-effect" href="tw_policy_platform.html">論壇</a></li>
-      </ul>
+<body>
+    <div class="navbar green" id='navbar'>
     </div>
 
     <div class="row">
-      <div class="col s12 m8 offset-m2">
-        <div class="card">
-          <div class="card-image">
-            <div style="height: 200px;">
-              <div class="collection">
-                <a href="#!" class="collection-item">公告</a>
-                <a href="#!" class="collection-item">問題回報</a>
-                <a href="#!" class="collection-item">給論壇的建議</a>
-                <a href="#!" class="collection-item">其餘事項...</a>
-              </div>
-              <a
-                href="tw_policy_platform.html"
-                class="green waves-effect waves-light btn-large platform_btn"
-                >進入論壇</a
-              >
-            </div>
-          </div>
-          <div class="card-content">
-            <blockquote>
-              <h5>什麼是參政權?</h5>
-            </blockquote>
-            <div class="content">
-              <p>
-                簡單地說就是作為國家的國民，能夠參與國家事務決策、代表自己政治意見、選出符合自己想法的代表的權利。
-                <br />
-                <br />
-                常見的參政權有
-                <a
-                  href="right_introduce.html?type=0"
-                  class="green lighten-2 right_bnt waves-effect waves-light btn-small"
-                  >選舉</a
-                >
-                <a
-                  href="right_introduce.html?type=1"
-                  class="green lighten-2 right_bnt waves-effect waves-light btn-small"
-                  >罷免</a
-                >
-                <a
-                  href="right_introduce.html?type=2"
-                  class="green lighten-2 right_bnt waves-effect waves-light btn-small"
-                  >創制</a
-                >
-                <a
-                  href="right_introduce.html?type=3"
-                  class="green lighten-2 right_bnt waves-effect waves-light btn-small"
-                  >複決</a
-                >
-              </p>
-            </div>
+        <div class="col s12 m8 offset-m2">
+            <div class="card">
+                <div class="card-image">
+                    <div style="height: 200px;">
+                        <div class="collection">
+                            <a href="#!" class="collection-item">公告</a>
+                            <a href="#!" class="collection-item">問題回報</a>
+                            <a href="#!" class="collection-item">給論壇的建議</a>
+                            <a href="#!" class="collection-item">其餘事項...</a>
+                        </div>
+                        <a href="tw_policy_platform.html" class="green waves-effect waves-light btn-large platform_btn">進入論壇</a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <blockquote>
+                        <h5>什麼是參政權?</h5>
+                    </blockquote>
+                    <div class="content">
+                        <p>
+                            簡單地說就是作為國家的國民，能夠參與國家事務決策、代表自己政治意見、選出符合自己想法的代表的權利。
+                            <br />
+                            <br /> 常見的參政權有
+                            <a href="right_introduce.html?type=0" class="green lighten-2 right_bnt waves-effect waves-light btn-small">選舉</a>
+                            <a href="right_introduce.html?type=1" class="green lighten-2 right_bnt waves-effect waves-light btn-small">罷免</a>
+                            <a href="right_introduce.html?type=2" class="green lighten-2 right_bnt waves-effect waves-light btn-small">創制</a>
+                            <a href="right_introduce.html?type=3" class="green lighten-2 right_bnt waves-effect waves-light btn-small">複決</a>
+                        </p>
+                    </div>
+                    <blockquote>
+                        <h5>可行使參政權的年齡</h5>
+                    </blockquote>
+                    <div class="content">
+                        <table class="striped">
+                            <thead>
+                                <tr>
+                                    <th>權利類型</th>
+                                    <th>法規依據</th>
+                                    <th>年齡</th>
+                                </tr>
+                            </thead>
 
-            <blockquote>
-              <h5>可行使參政權的年齡</h5>
-            </blockquote>
-            <div class="content">
-              <table class="striped">
-                <thead>
-                  <tr>
-                    <th>權利類型</th>
-                    <th>法規依據</th>
-                    <th>年齡</th>
-                  </tr>
-                </thead>
+                            <tbody>
+                                <tr>
+                                    <td>選舉權</td>
+                                    <td>憲法第130條</td>
+                                    <td>年滿20歲</td>
+                                </tr>
+                                <tr>
+                                    <td>被選舉權</td>
+                                    <td>憲法第130條</td>
+                                    <td>最低23歲</td>
+                                </tr>
+                                <tr>
+                                    <td>罷免權</td>
+                                    <td>
+                                        公職人員選舉罷免法第3條第3項<br /> 總統副總統選舉罷免法第76條
+                                    </td>
+                                    <td>年滿20歲</td>
+                                </tr>
+                                <tr>
+                                    <td>創制、複決權</td>
+                                    <td>公民投票法第7條</td>
+                                    <td>年滿18歲</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            參考資料:
+                            <br />https://www.legis-pedia.com/article/government-fundamental-rights/875#footnote-marker-1-1
+                        </p>
+                    </div>
 
-                <tbody>
-                  <tr>
-                    <td>選舉權</td>
-                    <td>憲法第130條</td>
-                    <td>年滿20歲</td>
-                  </tr>
-                  <tr>
-                    <td>被選舉權</td>
-                    <td>憲法第130條</td>
-                    <td>最低23歲</td>
-                  </tr>
-                  <tr>
-                    <td>罷免權</td>
-                    <td>
-                      公職人員選舉罷免法第3條第3項<br />
-                      總統副總統選舉罷免法第76條
-                    </td>
-                    <td>年滿20歲</td>
-                  </tr>
-                  <tr>
-                    <td>創制、複決權</td>
-                    <td>公民投票法第7條</td>
-                    <td>年滿18歲</td>
-                  </tr>
-                </tbody>
-              </table>
-              <p>
-                參考資料:
-                <br />https://www.legis-pedia.com/article/government-fundamental-rights/875#footnote-marker-1-1
-              </p>
+                    <blockquote>
+                        <a href="https://join.gov.tw/" target="_blank">
+                            <h5>公共政策網路參與平台</h5>
+                        </a>
+                    </blockquote>
+                    <div class="content">
+                        <p>非常棒，能夠利用網路提出意見與覆議</p>
+                        <p>缺點: 關注量太小、成功覆議率太低(流量太小)、提議門檻高(須具備專業知識與嚴謹的內容)</p>
+                        <br>
+                        <p style="font-size: 20px;font-weight:bold;">提案通過門檻</p>
+                        <img src="https://i.imgur.com/lmPAqri.png" style="width:100%" />
+                    </div>
+                    <blockquote>
+                        <h5>成立論壇的目的</h5>
+                    </blockquote>
+                    <div class="content">
+                        </p>
+                        台灣人容易事情發生當下生氣，但事情過後就遺忘，希望能集結當下氣憤的心理凝聚眾心， 一起總結出解法後，再去提議，才能有效運用國家資源。
+                        </p>
+                    </div>
+                </div>
             </div>
-            
-            <blockquote>
-                <a href="https://join.gov.tw/" target="_blank">
-                  <h5>公共政策網路參與平台</h5>
-                </a>
-            </blockquote>
-            <div class="content">
-                <p>非常棒，能夠利用網路提出意見與覆議</p>
-                <p>缺點: 關注量太小、成功覆議率太低(流量太小)、提議門檻高(須具備專業知識與嚴謹的內容)</p>
-                <br>
-                <p style="font-size: 20px;font-weight:bold;">提案通過門檻</p>
-                <img src="https://i.imgur.com/lmPAqri.png" style="width:100%"/>
-            </div>
-            <blockquote>
-                <h5>成立論壇的目的</h5>
-              </blockquote>
-            <div class="content">
-                </p>
-                    台灣人容易事情發生當下生氣，但事情過後就遺忘，希望能集結當下氣憤的心理凝聚眾心，
-                    一起總結出解法後，再去提議，才能有效運用國家資源。
-                </p>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
     <script type="text/javascript">
-      document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.sidenav');
-        var instances = M.Sidenav.init(elems, {});
-      });
-      document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.tooltipped');
-        var instances = M.Tooltip.init(elems, {"exitDelay": 50,"enterDelay":0});
-      });
     </script>
-  </body>
+    <script type="text/javascript" src="js/genElement.js"></script>
+    <script>
+        genNavBar('navbar');
+    </script>
+</body>
+
 </html>

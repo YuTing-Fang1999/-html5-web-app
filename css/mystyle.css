@@ -1,0 +1,140 @@
+body {
+    background-color: #e8f5e9;
+    position: relative;
+}
+
+.content {
+    font-size: 20px;
+    padding-left: 0px;
+}
+
+#title {
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+
+
+/* INDEX */
+
+.platform_btn {
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+    bottom: -25px;
+    transform: translate(-50%, 0%);
+    letter-spacing: 2px;
+    font-size: 30px;
+    width: 100%;
+}
+
+.right_bnt {
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+
+/* VOTE */
+
+.vote-container {
+    width: 100%;
+    background: rgb(236, 251, 255);
+    height: 100px;
+}
+
+.voting-bar {
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.vote-button {
+    margin: 10px;
+}
+
+.vote-button button {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.vote-container>div {
+    text-align: center;
+}
+
+.vote-ontainer button {
+    width: fit-content;
+}
+
+.vote-left {
+    background: rgb(120, 190, 33);
+}
+
+.vote-right {
+    background: rgb(166, 25, 46);
+}
+
+.vote-text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    min-width: 250px;
+    /*   font-size: 12px; */
+}
+
+.white-color {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/* searchBox */
+
+.searchBox {
+    width: fit-content;
+    position: absolute;
+    bottom: 1px;
+    right: 5px;
+}
+
+#search_text {
+    width: 200px;
+    height: 25px;
+    background-color: white;
+}
+
+.btn_search {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+
+/* PLATFORM */
+
+#post_btn {
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+#page_top {
+    position: relative;
+    /* margin-top: 20px; */
+    padding: 10px;
+    border-bottom: 2px solid gray;
+}
+
+#page_btn {
+    position: absolute;
+    display: inline-block;
+    right: 0%;
+    width: fit-content;
+}
+
+#category_btn {
+    margin-top: 20px;
+}
