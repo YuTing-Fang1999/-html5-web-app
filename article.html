@@ -118,12 +118,13 @@
                     type: "POST",
                     dataType: 'text',
                     success: function(msg) {
-                        //$('#result').text("儲存成功！");       
+                        //$('#result').text("儲存成功！");      
+                        comments.push(Input.value);
+                        displayComments();
                     },
                     error: function(xhr, ajaxOptions, thrownError) {}
                 });
-                comments.push(Input.value);
-                displayComments();
+
             } else {
                 alert("請輸入留言內容");
             }
